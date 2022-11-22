@@ -1,6 +1,7 @@
 #Esse programa executa, por meio de pensamento computacional, uma série de condicionais aninhadas.
 #Também é possível fazer o programa utilizando uma função recursiva e o operador 'elif'.
 #A instrução para esse desafio está em uma foto que descreve uma pergunta base e diversas frases que podem ser feitas baseadas em SIM ou NAO.
+#https://aprender3.unb.br/pluginfile.php/2293880/question/questiontext/1765870/2/22669769/Flowchart%20Template%20%281%29.jpg
 funciona = input('O programa funciona?\n')
 
 if funciona == 'SIM':      

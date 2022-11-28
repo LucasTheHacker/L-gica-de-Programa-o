@@ -41,18 +41,21 @@ print(f'{nota2:.0f} nota(s) de R$ 2.00')
 
 moedas = valorfloat - inteiro
 m1 = resto6
-m50 = moedas//0.5
-m25 = (moedas%0.5)//0.25
-resto = moedas - (0.25*m25+m50*0.5)
-m10 = resto//0.1
-m5 = (resto%0.1)//0.05
-resto = moedas - m50*0.5 - m25*0.25 - m10*0.1 - m5*0.05
-m01 = resto//0.01
+moedasint = moedas*100 #Se não converter para inteiro ele trabalha com arredondamento em 2 casas decimais, dando WRONG ANSWER
+m50 = moedasint//50
+resto1 = moedasint%50 
+m25 = resto1//25
+resto2 = resto1%25
+m10 = resto2//10
+resto3 = resto2%10
+m05 = resto3//5
+resto4 = resto3%5
+m01 = resto4//1
 
 print('MOEDAS:')
 print(f'{m1:.0f} moeda(s) de R$ 1.00')
 print(f'{m50:.0f} moeda(s) de R$ 0.50')
 print(f'{m25:.0f} moeda(s) de R$ 0.25')
 print(f'{m10:.0f} moeda(s) de R$ 0.10')
-print(f'{m5:.0f} moeda(s) de R$ 0.05')
+print(f'{m05:.0f} moeda(s) de R$ 0.05')
 print(f'{m01:.0f} moeda(s) de R$ 0.01')

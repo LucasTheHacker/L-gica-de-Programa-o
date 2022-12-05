@@ -1,7 +1,7 @@
 import math
 #Esse programa ordena, de maneira crescente, 3 números inteiros
 #Depois disso, eles são printados na ordem que entraram
-'''Fiz esse código antes de estudar o método sort :'''
+'''Fiz esse código antes de estudar o método sort '''
 a, b, c = map(int, input().split())
 def menor(): #utilização de função condicional p definir o menor
     global a

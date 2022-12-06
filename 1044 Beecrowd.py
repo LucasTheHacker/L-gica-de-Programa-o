@@ -24,3 +24,4 @@ if a == b and a==c:
     print(f'TRIANGULO EQUILATERO')
 elif a == b or b ==c:
     print(f'TRIANGULO ISOSCELES')
+#Utilização de listas

@@ -4,22 +4,23 @@ if a%b == 0 or b%a == 0:
     print('Sao Multiplos')
 else:
     print('Nao sao Multiplos')
+    
 #1045 Beecrowd
 lista = map(float, input().split())
-lista = sorted(lista, reverse=True)
-#criando uma lista
+#A lista, quando os inputs são dados na mesma linha, é criada de forma automática...
+lista = sorted(lista, reverse=True) #Colocando a lista ordenada de forma decrescente
 a = lista[0]
 b = lista[1]
 c = lista[2]
 if a >= b + c:
     print(f'NAO FORMA TRIANGULO')
-if a**2 == b**2 + c**2:
+elif a**2 == b**2 + c**2:
     print(f'TRIANGULO RETANGULO')
-if a**2 > b**2 + c**2:
+elif a**2 > b**2 + c**2:
     print(f'TRIANGULO OBTUSANGULO')
-if a**2 < b**2 + c**2:
+if a**2 < (b**2 + c**2):
     print(f'TRIANGULO ACUTANGULO')
 if a == b and a==c:
     print(f'TRIANGULO EQUILATERO')
-elif a == b or a == c or b == c:
+elif a == b or b ==c:
     print(f'TRIANGULO ISOSCELES')

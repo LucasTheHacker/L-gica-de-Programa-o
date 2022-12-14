@@ -6,8 +6,8 @@ while True:
         salarios.append(salario_unico) #adiciona o salário à lista 'vazia' criada anteriormente
     else:
         break #sai do loop infinito
-maior_salario = max(float(salario_unico) for salario_unico in salarios) #calcula o maior valor de ponto flutuante para as variáveis 'salário_unico' na lista 'salarios'
-if maior_salario == 0: 
+maior_salario = max(float(salario_unico) for salario_unico in salarios) #calcula o maior valor de ponto flutuante para a variavel salario_unico na lista 'salarios'
+if maior_salario == 0:  #no caso da linha acima, utilizei o mesmo nome da variável para ficar didático, mas ,nesse tipo de 'for', a variável é criada self-close
     print('Não tem') #condição imposta pela questão
 else:
     print(f'{maior_salario:.2f}') #f string com 2 casas de ponto flutuante

@@ -4,7 +4,7 @@ posicao = 0
 caractere = ','
 string = input()
 tamanho_string = len(string)
-controle = 'variavel somente de controle do caso o while seja'
+controle = 'variavel somente de controle do caso o while seja atendido'
 while posicao < tamanho_string and string[posicao != ","]:
     if caractere == string[posicao]:
         print("passed")
